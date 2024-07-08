@@ -2,6 +2,7 @@
 import Hero from "../components/Hero";
 import MaintenanceService from "../components/MaintenanceService";
 import Nav from "../components/Nav";
+import ScheduleService from "../components/ScheduleService";
 import ServicesSection from "../components/ServicesSection";
 import TrustedPartner from "../components/TrustedPartner";
 import ValuesMission from "../components/ValuesMission";
@@ -20,6 +21,7 @@ export default function Home(){
         <ServicesSection />
         <MaintenanceService />
         <WhyChooseUsTwo />
+        <ScheduleService />
         
         </>
     )
