@@ -1,4 +1,5 @@
 
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import MaintenanceService from "../components/MaintenanceService";
 import Nav from "../components/Nav";
@@ -22,6 +23,7 @@ export default function Home(){
         <MaintenanceService />
         <WhyChooseUsTwo />
         <ScheduleService />
+        <Footer />
         
         </>
     )
