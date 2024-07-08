@@ -4,7 +4,7 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 
 export default function ValuesMission() {
     return(
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-8 justify-items-center justify-center">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-3 my-8 justify-items-center justify-center" id="about">
             <div className="flex flex-col justify-between items-center border-2 border-slate-200 shadow-lg p-4 w-[85%] rounded-lg">
                 {/* icon */}
                 <div>
@@ -32,6 +32,6 @@ export default function ValuesMission() {
             </div>
             
             
-        </div>
+        </section>
     )
 }

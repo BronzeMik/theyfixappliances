@@ -3,7 +3,7 @@ import { RiCalendarScheduleLine } from "react-icons/ri";
 
 export default function ScheduleService() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-6 px-5 pb-8 mt-8">
+        <section className="grid grid-cols-1 md:grid-cols-6 px-5 pb-8 mt-8" id="contact">
             {/* info */}
             <div className="flex flex-col justify-center items-center md:col-start-1 md:col-end-4 md:px-8 pb-5">
                 <RiCalendarScheduleLine className="text-2xl md:text-6xl pb-3" />
@@ -49,6 +49,6 @@ export default function ScheduleService() {
 
                 <button type="submit" className="bg-blue-800 border-2 border-white text-white w-full px-4 py-3 my-2 hover:bg-white hover:text-blue-800 hover:border-blue-800">Request Repair Service Now</button>
             </form>
-        </div>
+        </section>
     )
 }

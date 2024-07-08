@@ -3,7 +3,7 @@
 
 export default function Hero() {
     return(
-        <div className={`flex flex-col justify-center md:justify-end items-center px-6 pb-6 w-screen min-h-[500px] hero-img text-white`}>
+        <section className={`flex flex-col justify-center md:justify-end items-center px-6 pb-6 w-screen min-h-[500px] hero-img text-white`} id="home">
             <div className="text-center md:w-[50%] md:mb-10">
                 <h1 className="text-2xl md:text-5xl my-2">Reliable Appliance Repair Services You Can Trust</h1>
                 <h2 className="text-blue-800 md:text-2xl my-3 font-bold">Expert Repair Solutions for Your Home and Business</h2>
@@ -18,6 +18,6 @@ export default function Hero() {
                 
             </div>
             
-        </div>
+        </section>
     )
 }
