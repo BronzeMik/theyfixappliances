@@ -18,7 +18,7 @@ export default function MenuItems() {
         <>
             {/* mobile menu items */}
             <div className={`md:w-[50%] ${menuVisible ? 'block' : 'hidden'} md:hidden z-0`}>
-                <ul className={`flex flex-col fixed left-0 top-9 items-center w-screen bg-orange-700`}>
+                <ul className={`flex flex-col fixed left-0 top-9 items-center w-screen bg-orange-700 z-0`}>
                 <li className="border-b-slate-100 pt-5 py-2 border-b-2 w-full text-center bg-orange-700 text-white" onClick={() => scrollToSection('home')}>HOME</li>
                     <li className="border-b-slate-100 py-2 border-b-2 w-full text-center bg-orange-700 text-white" onClick={() => scrollToSection('about')}>ABOUT US</li>
                     <li className="border-b-slate-100 py-2 border-b-2 w-full text-center bg-orange-700 text-white" onClick={() => scrollToSection('services')}>SERVICES</li>

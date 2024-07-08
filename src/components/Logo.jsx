@@ -1,10 +1,10 @@
-
+import img from '../assets/tarc-logo.jpg'
 
 export default function Logo() {
     return(
 
-        <div className="logo text-sm md:text-lg">
-            <h2 className="font-bold text-orange-700">THEY FIX APPLIANCES</h2>
+        <div className='max-w-[10%]'>
+            <img src={img} alt='logo' title='They Fix Appliances' className='md:max-w-[60%]'/>
         </div>
     )
 }

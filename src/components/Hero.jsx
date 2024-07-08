@@ -1,3 +1,4 @@
+import CtaBtn from "./CtaBtn";
 
 
 
@@ -12,7 +13,7 @@ export default function Hero() {
                 <h4 className="text-blue-800 md:text-lg">Schedule Your Service Today and Experience the Difference!</h4>
                 <div className="pt-5">
 
-                    <button className="bg-orange-700 text-white rounded-lg px-3 py-2 border-2 border-white hover:border-orange-700 hover:text-orange-700 hover:bg-white">SCHEDULE A SERVICE</button>
+                    <CtaBtn />
                
                 </div>
                 
