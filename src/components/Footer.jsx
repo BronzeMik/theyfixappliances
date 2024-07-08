@@ -24,13 +24,13 @@ export default function Footer() {
                     <li>CAREERS</li>
                 </ul>
             </div>
-            <div className="py-5">
+            <div className="flex flex-col items-center py-5">
                 <h2 className="text-2xl md:text-3xl font-semibold pb-3">CONTACT US</h2>
-                <div className="flex justify-center">
+                <div className="flex justify-around items-center md:w-[60%]">
                     <PiPhone />
                     <a href="tel:1-800-999-9999">1-800-999-9999</a>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-around items-center md:w-[60%]">
                     <MdEmail />
                     <a href="mailto:contact@theyfixappliances.com">contact@theyfixappliances.com</a>
                 </div>
