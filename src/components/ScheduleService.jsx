@@ -6,7 +6,7 @@ export default function ScheduleService() {
         <section className="grid grid-cols-1 md:grid-cols-6 px-5 pb-8 mt-8" id="contact">
             {/* info */}
             <div className="flex flex-col justify-center items-center md:col-start-1 md:col-end-4 md:px-8 pb-5">
-                <RiCalendarScheduleLine className="text-2xl md:text-6xl pb-3" />
+                <RiCalendarScheduleLine className="text-5xl md:text-7xl pb-3" />
                 <h2 className="text-2xl md:text-4xl font-semibold">SCHEDULE YOUR SERVICE</h2>
                 <h3 className="text-xl text-orange-700 mt-6">
                     Online Scheduling

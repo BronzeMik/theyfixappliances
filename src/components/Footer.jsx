@@ -17,15 +17,15 @@ export default function Footer() {
             <div className="flex flex-col md:items-center md:pr-6 py-5">
                 <h2 className="text-2xl md:text-3xl font-semibold pb-3">Links</h2>
                 <ul className="md:text-left">
-                    <li onClick={() => scrollToSection('home')} className="cursor-pointer">HOME</li>
-                    <li onClick={() => scrollToSection('about')} className="cursor-pointer">ABOUT US</li>
-                    <li onClick={() => scrollToSection('services')} className="cursor-pointer">SERVICES</li>
+                    <li onClick={() => scrollToSection('home')} className="cursor-pointer hover:underline">HOME</li>
+                    <li onClick={() => scrollToSection('about')} className="cursor-pointer hover:underline">ABOUT US</li>
+                    <li onClick={() => scrollToSection('services')} className="cursor-pointer hover:underline">SERVICES</li>
                     {/* <li>SERVICE AREAS</li> */}
                     {/* <li>CUSTOMER REVIEWS</li> */}
-                    <li onClick={() => scrollToSection('contact')} className="cursor-pointer">CONTACT US</li>
+                    <li onClick={() => scrollToSection('contact')} className="cursor-pointer hover:underline">CONTACT US</li>
                     {/* <li>FAQs</li>
                     <li>BLOG</li> */}
-                    <li className="cursor-pointer">CAREERS</li>
+                    <li className="cursor-pointer hover:underline">CAREERS</li>
                 </ul>
             </div>
             <div className="flex flex-col items-center py-5">
