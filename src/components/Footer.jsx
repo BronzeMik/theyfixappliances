@@ -25,7 +25,7 @@ export default function Footer() {
                     <li onClick={() => scrollToSection('contact')} className="cursor-pointer hover:underline">CONTACT US</li>
                     {/* <li>FAQs</li>
                     <li>BLOG</li> */}
-                    <li className="cursor-pointer hover:underline">CAREERS</li>
+                    <li className="cursor-pointer hover:underline" onClick={() => scrollToSection('career')}>CAREERS</li>
                 </ul>
             </div>
             <div className="flex flex-col items-center py-5">

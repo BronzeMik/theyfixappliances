@@ -27,7 +27,7 @@ export default function MenuItems() {
                     <li className="border-b-slate-100 py-2 border-b-2 w-full text-center bg-orange-700 text-white"  onClick={() => scrollToSection('contact')}>CONTACT US</li>
                     {/* <li>FAQs</li>
                     <li>BLOG</li> */}
-                    <li className="border-b-slate-100 py-2 border-b-2 w-full text-center bg-orange-700 text-white">CAREERS</li>
+                    <li className="border-b-slate-100 py-2 border-b-2 w-full text-center bg-orange-700 text-white" onClick={() => scrollToSection('career')}>CAREERS</li>
                 </ul>
             </div>
             <div className="">
@@ -47,7 +47,7 @@ export default function MenuItems() {
                     <li className="cursor-pointer font-semibold hover:text-orange-700"  onClick={() => scrollToSection('contact')}>CONTACT US</li>
                     {/* <li>FAQs</li>
                     <li>BLOG</li> */}
-                    <li className="cursor-pointer font-semibold hover:text-orange-700">CAREERS</li>
+                    <li className="cursor-pointer font-semibold hover:text-orange-700" onClick={() => scrollToSection('career')}>CAREERS</li>
                 </ul>
                 
                 
