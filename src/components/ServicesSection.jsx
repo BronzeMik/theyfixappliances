@@ -6,7 +6,7 @@ export default function ServicesSection() {
     return (
         <section className="py-12 bg-gray-100" id='services'>
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
+                <h2 className="text-3xl font-bold text-center mb-8">Residential Services</h2>
                 <p className="text-xl text-center mb-12">Comprehensive Appliance Repair Solutions for Home and Business</p>
                 
                 <div className="grid grid-cols-1 gap-8">

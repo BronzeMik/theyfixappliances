@@ -58,8 +58,8 @@ export default function WhyChooseUs(){
                     icon={<MdOutlineLocalShipping  className="text-4xl md:text-6xl  text-white"/>}
                     description={
                         <div className="text-white">
-                            <h3 className="font-semibold text-xl">Local and Reliable</h3>
-                            <p>As a locally owned and operated business, we take pride in serving our community with integrity and reliability. We are committed to building long-term relationships with our customers based on trust and excellence.</p>
+                            <h3 className="font-semibold text-xl">Fast Quality Service</h3>
+                            <p>We understand that a malfunctioning appliance can disrupt your daily routine. That&apos;s why we prioritize quick response times and aim to have a technician at your doorstep as soon as possible. Our efficient scheduling system ensures that you won&apos;t be left waiting.</p>
                         </div>
                     }
                     />
