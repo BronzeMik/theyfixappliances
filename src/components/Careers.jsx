@@ -5,7 +5,7 @@ const Careers = () => {
     <section className="bg-white py-12" id='career'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Join Our Team</h2>
+          <h2 className="text-base text-blue-800 font-semibold tracking-wide uppercase">Join Our Team</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Careers
           </p>
@@ -19,7 +19,7 @@ const Careers = () => {
               <div className="flow-root bg-gray-50 rounded-lg px-4 pb-8 shadow-md">
                 <div className="-mt-6">
                   <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                    <span className="inline-flex items-center justify-center p-3 bg-blue-800 rounded-md shadow-lg">
                       <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2" />
                       </svg>
@@ -45,7 +45,7 @@ const Careers = () => {
           <ul className="mt-4 space-y-4 text-lg text-gray-500">
             {benefits.map((benefit, index) => (
               <li key={index} className="flex">
-                <svg className="flex-shrink-0 h-6 w-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="flex-shrink-0 h-6 w-6 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="ml-3">{benefit}</span>
