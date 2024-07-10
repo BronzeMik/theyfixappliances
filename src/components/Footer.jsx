@@ -32,7 +32,7 @@ export default function Footer() {
                 <h2 className="text-2xl md:text-3xl font-semibold pb-3">CONTACT US</h2>
                 <div className="flex justify-around items-center md:w-[60%]">
                     <PiPhone />
-                    <a href="tel:1-800-999-9999">1-800-999-9999</a>
+                    <a href="tel:1-216-553-2564">1-216-553-2564</a>
                 </div>
                 <div className="flex justify-around items-center md:w-[60%]">
                     <MdEmail />
