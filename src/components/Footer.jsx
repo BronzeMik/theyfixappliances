@@ -11,7 +11,7 @@ export default function Footer() {
     return(
         <div className="grid grid-cols-1 md:grid-cols-3 border-t-2 border-t-slate-200 shadow-md bg-white py-8 px-2 text-center">
             <div className="flex flex-col justify-center items-center">
-                <img src={img} alt='logo' title='They Fix Appliances' className='max-w-[40%] mb-3'/>
+                <img src={img} alt='logo' title='The Appliance Repair Centers' className='max-w-[40%] mb-3'/>
                 <p>Call us first, you&apos;ll be glad you did!</p>
             </div>
             <div className="flex flex-col md:items-center md:pr-6 py-5">

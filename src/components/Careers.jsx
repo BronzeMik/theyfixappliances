@@ -40,7 +40,7 @@ const Careers = () => {
             Why Work With Us?
           </h3>
           <p className="mt-4 text-lg text-gray-500">
-            At They Fix Appliances, we value our employees and offer a supportive and dynamic work environment. Here are just a few benefits of joining our team:
+            At The Appliance Repair Centers, we value our employees and offer a supportive and dynamic work environment. Here are just a few benefits of joining our team:
           </p>
           <ul className="mt-4 space-y-4 text-lg text-gray-500">
             {benefits.map((benefit, index) => (

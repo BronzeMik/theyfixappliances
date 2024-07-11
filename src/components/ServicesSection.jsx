@@ -15,7 +15,7 @@ export default function ServicesSection() {
 
                     {/* Commercial Appliance Repair */}
                     <h2 className="text-3xl font-bold text-center mt-8">COMMERCIAL REPAIR</h2>
-                    <p className="text-center md:px-48 px-3">At They Fix Appliances, we offer a wide range of repair services tailored to meet the needs of both residential and commercial clients. Our team of certified technicians is equipped with the knowledge and tools to handle any appliance issue efficiently and effectively.</p>
+                    <p className="text-center md:px-48 px-3">At The Appliance Repair Centers, we offer a wide range of repair services tailored to meet the needs of both residential and commercial clients. Our team of certified technicians is equipped with the knowledge and tools to handle any appliance issue efficiently and effectively.</p>
                     <CommercialServices />
                 </div>
 
