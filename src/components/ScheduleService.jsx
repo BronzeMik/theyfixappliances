@@ -5,6 +5,7 @@ import { RiCalendarScheduleLine } from "react-icons/ri";
 export default function ScheduleService() {
     const [result, setResult] = useState("");
     const currentDate = new Date().toISOString().split('T')[0];
+    const access_key = process.env.REACT_APP_ACCESS_KEY
 
     async function handleFormSubmit(event) {
         event.preventDefault();
@@ -37,7 +38,7 @@ export default function ScheduleService() {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+        formData.append(`access_key", ${access_key}`);
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -58,10 +59,6 @@ export default function ScheduleService() {
 
 
 
-    const onSubmit = async (event) => {
-        event.preventDefault();
-
-    };
 
     function isValidPhoneNumber(phoneNum) {
         // Regular expression to validate US phone number (optional: area code, dashes, spaces)
@@ -93,7 +90,7 @@ export default function ScheduleService() {
 
 
             {/* form */}
-            <form action="" method="" className="md:col-start-4 md:col-end-7 border-2 px-3 py-3 rounded-lg bg-white shadow-lg" onSubmit={handleFormSubmit}>
+            <form className="md:col-start-4 md:col-end-7 border-2 px-3 py-3 rounded-lg bg-white shadow-lg" onSubmit={handleFormSubmit}>
                 {result.length > 1 ? <p>{result}</p> :
                     <>
                         <label htmlFor='full-name' className="font-semibold">Full Name</label><br />
@@ -113,7 +110,7 @@ export default function ScheduleService() {
                         <small>Office hours are 9am to 6pm</small><br /><br />
 
                         <label htmlFor="description" className="font-semibold">Please describe your appliance issue</label><br />
-                        <textarea id="description" rows={5} cols={30} placeholder="Please describe your appliance issue" className="w-full border-2"></textarea>
+                        <textarea id="description" rows={5} cols={30} placeholder="Please describe your appliance issue" className="w-full border-2" name="description"></textarea>
 
                         <button type="submit" className="bg-blue-800 border-2 border-white text-white w-full px-4 py-3 my-2 hover:bg-white hover:text-blue-800 hover:border-blue-800">Request Repair Service Now</button>
                     </>
