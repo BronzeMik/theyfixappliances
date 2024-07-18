@@ -1,7 +1,73 @@
 
+import { useState } from "react";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 
 export default function ScheduleService() {
+    const [result, setResult] = useState("");
+    const currentDate = new Date().toISOString().split('T')[0];
+
+    async function handleFormSubmit(event) {
+        event.preventDefault();
+        const fullName = document.getElementById('full-name').value;
+        const description = document.getElementById('description').value;
+        const phoneInput = document.getElementById('phone');
+        const phoneNum = phoneInput.value.replace(/[^\d]/g, ''); // Remove non-digits
+
+        // Check if the phone number matches the pattern or is a valid US phone number
+        if (!isValidPhoneNumber(phoneNum)) {
+            alert("Please enter a valid US phone number.");
+            phoneInput.focus();
+            return false; // Prevent form submission
+        }
+
+        // Check name
+        if (fullName.trim().length < 5) {
+            alert('Please enter your full name.');
+            return;
+        }
+
+
+
+        // Check description
+        if (description.trim().length < 10) {
+            alert('Please describe your appliance issue.');
+            return;
+        }
+
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+
+    }
+
+
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+
+    };
+
+    function isValidPhoneNumber(phoneNum) {
+        // Regular expression to validate US phone number (optional: area code, dashes, spaces)
+        const phonePattern = /^(\+?1-?)?(\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$/;
+        return phonePattern.test(phoneNum);
+    }
     return (
         <section className="grid grid-cols-1 md:grid-cols-6 px-5 pb-8 mt-8" id="contact">
             {/* info */}
@@ -20,34 +86,39 @@ export default function ScheduleService() {
                     Phone Scheduling
                 </h3>
                 <p>
-                Prefer to speak with someone directly? Call our friendly customer service team at 1-216-553-2564, and we&apos;ll assist you in scheduling your service appointment. Our representatives are available 24/7 to take your call and answer any questions you may have.
+                    Prefer to speak with someone directly? Call our friendly customer service team at 1-216-553-2564, and we&apos;ll assist you in scheduling your service appointment. Our representatives are available 24/7 to take your call and answer any questions you may have.
                 </p>
             </div>
-            
+
 
 
             {/* form */}
-            <form action="" method="" className="md:col-start-4 md:col-end-7 border-2 px-3 py-3 rounded-lg bg-white shadow-lg">
-                <label htmlFor='full-name' className="font-semibold">Full Name</label><br />
-                <input type='text' id="full-name" placeholder="FULL NAME" name="Full Name" required className="w-full border-2" /><br /><br />
+            <form action="" method="" className="md:col-start-4 md:col-end-7 border-2 px-3 py-3 rounded-lg bg-white shadow-lg" onSubmit={handleFormSubmit}>
+                {result.length > 1 ? <p>{result}</p> :
+                    <>
+                        <label htmlFor='full-name' className="font-semibold">Full Name</label><br />
+                        <input type='text' id="full-name" placeholder="FULL NAME" name="Full Name" required className="w-full border-2" /><br /><br />
 
-                <label htmlFor='phone' className="font-semibold">Contact Phone Number</label><br />
-                <input type='phone' id="phone" placeholder="PHONE NUMBER" name="phone number" className="w-full border-2" required /><br /><br />
+                        <label htmlFor='phone' className="font-semibold">Contact Phone Number</label><br />
+                        <input type='phone' id="phone" placeholder="PHONE NUMBER" name="phone number" pattern="^\d{10}$" title="Please enter a 10-digit phone number (digits only)" className="w-full border-2" required /><br /><br />
 
-                <label htmlFor='email' className="font-semibold">Contact Email</label><br />
-                <input type='email' id="email" placeholder="EMAIL" name="email" className="w-full border-2" required /><br /><br />
+                        <label htmlFor='email' className="font-semibold">Contact Email</label><br />
+                        <input type='email' id="email" placeholder="EMAIL" name="email" className="w-full border-2" required /><br /><br />
 
-                <label htmlFor='date' className="font-semibold">Choose a date</label><br />
-                <input type='date' id="date" name="date" className="w-full border-2" required /><br /><br />
+                        <label htmlFor='date' className="font-semibold">Choose a date</label><br />
+                        <input type='date' id="date" name="date" className="w-full border-2" min={currentDate} required /><br /><br />
 
-                <label htmlFor="appt-time" className="font-semibold">Choose a time for your appointment:</label><br />
-                <input type="time" id="appt-time" name="appointment time" min="09:00" max="18:00" className="w-full border-2" required />
-                <small>Office hours are 9am to 6pm</small><br /><br />
+                        <label htmlFor="appt-time" className="font-semibold">Choose a time for your appointment:</label><br />
+                        <input type="time" id="appt-time" name="appointment time" min="09:00" max="18:00" className="w-full border-2" required />
+                        <small>Office hours are 9am to 6pm</small><br /><br />
 
-                <label htmlFor="description" className="font-semibold">Please describe your appliance issue</label><br />
-                <textarea id="description" rows={5} cols={30} placeholder="Please describe your appliance issue" className="w-full border-2"></textarea>
+                        <label htmlFor="description" className="font-semibold">Please describe your appliance issue</label><br />
+                        <textarea id="description" rows={5} cols={30} placeholder="Please describe your appliance issue" className="w-full border-2"></textarea>
 
-                <button type="submit" className="bg-blue-800 border-2 border-white text-white w-full px-4 py-3 my-2 hover:bg-white hover:text-blue-800 hover:border-blue-800">Request Repair Service Now</button>
+                        <button type="submit" className="bg-blue-800 border-2 border-white text-white w-full px-4 py-3 my-2 hover:bg-white hover:text-blue-800 hover:border-blue-800">Request Repair Service Now</button>
+                    </>
+                }
+
             </form>
         </section>
     )

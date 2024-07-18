@@ -27,7 +27,7 @@ export default function MenuItems() {
                     <li className="border-b-slate-100 py-2 border-b-2 w-full text-center bg-orange-700 text-white"  onClick={() => scrollToSection('contact')}>CONTACT US</li>
                     {/* <li>FAQs</li>
                     <li>BLOG</li> */}
-                    <li className="border-b-slate-100 py-2 border-b-2 w-full text-center bg-orange-700 text-white" onClick={() => scrollToSection('career')}>CAREERS</li>
+                    <li className="py-2 w-full text-center bg-orange-700 text-white" onClick={() => scrollToSection('career')}>CAREERS</li>
                 </ul>
             </div>
             <div className="">
