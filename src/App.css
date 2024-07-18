@@ -43,8 +43,11 @@ body {
   color: #888;
 }
 
+
+
 .hero-img {
   background-image: url('./assets/hero-img.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
+

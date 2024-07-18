@@ -1,6 +1,6 @@
 
 
-export default function TwoColumnSection({title, description, img, reversed}) {
+export default function TwoColumnSection({title, description, img1, img2, reversed}) {
     return(
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
             {reversed ?
@@ -8,7 +8,10 @@ export default function TwoColumnSection({title, description, img, reversed}) {
             {/* img */}
             <div>
                 
-                <img src={`${img}`} alt='technician' className="w-full h-[400px] object-cover"/>
+            <picture className="w-full h-[400px] object-cover">
+                    <source srcSet={img1} type="image/webp" />
+                    <img src={img2} alt="Description of the image" title='The Appliance Repair Centers'/>
+                </picture>
             </div>
             {/* words */}
             <div className="flex flex-col justify-center">
@@ -24,8 +27,11 @@ export default function TwoColumnSection({title, description, img, reversed}) {
                 </div>
                 {/* img */}
                 <div className="order-1 md:order-2">
+                <picture className="w-full h-[400px] object-cover">
+                    <source srcSet={img1} type="image/webp" />
+                    <img src={img2} alt="Description of the image" title='The Appliance Repair Centers'/>
+                </picture>
                     
-                    <img src={`${img}`} alt='technician' className="w-full h-[400px] object-cover"/>
                 </div>
             </>}
             

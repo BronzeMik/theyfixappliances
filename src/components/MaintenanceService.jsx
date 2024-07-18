@@ -1,4 +1,5 @@
-import img2 from '../assets/customer-tech2.png';
+import pngimg from '../assets/customer-tech2.png';
+import webpimg from '../assets/customer-tech2.png'
 
 
 
@@ -10,8 +11,11 @@ export default function MaintenanceService() {
 
             {/* img */}
             <div>
+            <picture className="w-full h-[400px] object-cover">
+                    <source srcSet={webpimg} type="image/webp" />
+                    <img src={pngimg} alt="Description of the image" title='The Appliance Repair Centers'/>
+            </picture>
                 
-                <img src={`${img2}`} alt='technician' className="w-full h-[400px] object-cover"/>
             </div>
             {/* words */}
             <div className="flex flex-col justify-center">

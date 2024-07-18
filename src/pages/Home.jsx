@@ -18,19 +18,26 @@ export default function Home(){
     
     return(
         <>
+        <header>
+            <Nav />
+        </header>
 
-        <Nav />
-        <Hero />
-        <ValuesMission />
-        <TrustedPartner />
-        <WhyChooseUs />
-        <ServicesSection />
-        <PMServices />
-        <MaintenanceService />
-        <WhyChooseUsTwo />
-        <ScheduleService />
-        <Careers />
-        <Footer />
+        <main>
+            <Hero />
+            <ValuesMission />
+            <TrustedPartner />
+            <WhyChooseUs />
+            <ServicesSection />
+            <PMServices />
+            <MaintenanceService />
+            <WhyChooseUsTwo />
+            <ScheduleService />
+            <Careers />
+        </main>
+        <footer>
+            <Footer />
+        </footer>
+        
         
         </>
     )

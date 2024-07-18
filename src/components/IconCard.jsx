@@ -10,7 +10,7 @@ export default function IconCard({icon, description}) {
                 </div>
                 {/* text */}
                 <div className="text-center">
-                    <p>{description}</p>
+                    <>{description}</>
                 </div>
             </div>
         </>
