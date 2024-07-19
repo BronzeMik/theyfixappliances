@@ -5,7 +5,8 @@ import { RiCalendarScheduleLine } from "react-icons/ri";
 export default function ScheduleService() {
     const [result, setResult] = useState("");
     const currentDate = new Date().toISOString().split('T')[0];
-    const access_key = process.env.REACT_APP_ACCESS_KEY
+    const access_key = process.env.REACT_APP_ACCESS_KEY;
+    console.log(access_key)
 
     async function handleFormSubmit(event) {
         event.preventDefault();
@@ -37,8 +38,8 @@ export default function ScheduleService() {
 
         setResult("Sending....");
         const formData = new FormData(event.target);
-
-        formData.append(`access_key", ${access_key}`);
+        
+        formData.append("access_key", access_key);
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
