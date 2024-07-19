@@ -92,7 +92,7 @@ export default function ScheduleService() {
 
             {/* form */}
             <form className="md:col-start-4 md:col-end-7 border-2 px-3 py-3 rounded-lg bg-white shadow-lg" onSubmit={handleFormSubmit}>
-                {result.length > 1 ? <p>{result}</p> :
+                {result.length > 1 ? <div className="w-full h-full flex items-center justify-center"><p>{result}</p></div> :
                     <>
                         <label htmlFor='full-name' className="font-semibold">Full Name</label><br />
                         <input type='text' id="full-name" placeholder="FULL NAME" name="Full Name" required className="w-full border-2" /><br /><br />
