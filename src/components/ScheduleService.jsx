@@ -49,11 +49,11 @@ export default function ScheduleService() {
         const data = await response.json();
 
         if (data.success) {
-            setResult("Form Submitted Successfully");
+            setResult("Thank you for scheduling an appointment, a member of our team will call you to confirm within 1 business day.");
             event.target.reset();
         } else {
-            console.log("Error", data);
-            setResult(data.message);
+            console.log("Error");
+            setResult("We were unable to submit the form, please refresh and try again");
         }
 
     }
