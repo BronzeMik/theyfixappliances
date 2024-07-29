@@ -16,7 +16,7 @@ export default function CitiesWeServe() {
     return (
         <>
             <section className="pt-16 pb-16 bg-gradient-to-r from-custom-orange-start to-custom-orange-end">
-                <h2 className="text-5xl uppercase font-extrabold text-center text-gray-800 mb-12">Cities We Serve</h2>
+                <h2 className="text-4xl md:text-5xl uppercase font-extrabold text-center text-gray-800 mb-12">Cities We Serve</h2>
                 <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
                     {Object.entries(citiesWeServe).map(([state, cities]) => (
                         <div key={state} className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl">
