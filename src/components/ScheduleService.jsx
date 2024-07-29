@@ -32,7 +32,7 @@ export default function ScheduleService() {
 
         // Check description
         if (description.trim().length < 10) {
-            alert('Please describe your appliance issue.');
+            alert('Please describe your appliance issue. (minimum 10 characters)');
             return;
         }
 
@@ -49,6 +49,7 @@ export default function ScheduleService() {
         const data = await response.json();
 
         if (data.success) {
+            alert('Thank you for scheduling an appointment, a member of our team will call you to confirm within 1 business day.')
             setResult("Thank you for scheduling an appointment, a member of our team will call you to confirm within 1 business day.");
             event.target.reset();
         } else {
