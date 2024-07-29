@@ -1,4 +1,5 @@
 
+import ApplianceRepairService from "../components/ApplianceRepairService";
 import Careers from "../components/Careers";
 import CitiesWeServe from "../components/CitiesWeServe";
 import Footer from "../components/Footer";
@@ -31,6 +32,7 @@ export default function Home(){
             <ServicesSection />
             <PMServices />
             <MaintenanceService />
+            <ApplianceRepairService />
             <CitiesWeServe />
             <WhyChooseUsTwo />
             <ScheduleService />
