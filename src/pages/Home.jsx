@@ -1,5 +1,6 @@
 
 import Careers from "../components/Careers";
+import CitiesWeServe from "../components/CitiesWeServe";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import MaintenanceService from "../components/MaintenanceService";
@@ -18,11 +19,11 @@ export default function Home(){
     
     return(
         <>
-        <header>
+        <header >
             <Nav />
         </header>
 
-        <main>
+        <main >
             <Hero />
             <ValuesMission />
             <TrustedPartner />
@@ -30,6 +31,7 @@ export default function Home(){
             <ServicesSection />
             <PMServices />
             <MaintenanceService />
+            <CitiesWeServe />
             <WhyChooseUsTwo />
             <ScheduleService />
             <Careers />

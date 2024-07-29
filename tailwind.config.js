@@ -8,6 +8,10 @@ export default {
     extend: {
       backgroundImage: {
         'hero-img': "url('./src/assets/hero-img.jpg')"
+      },
+      colors: {
+        'custom-orange-start': '#ef5c39',
+        'custom-orange-end': '#faa23f',
       }
     },
   },
