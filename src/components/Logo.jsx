@@ -10,8 +10,8 @@ export default function Logo() {
                     <source srcSet={webpimg} type="image/webp" />
                     <img src={pngimg} alt="Description of the image" title='The Appliance Repair Centers'/>
             </picture>
-            <a href='tel:2165532564' className='font-bold flex items-center justify-around md:hidden bg-blue-800 mx-3 py-2 px-2 rounded-lg text-white text-[0.7em] flex-wrap'>
-                <FaPhone className='mx-2'/>216-553-2564
+            <a href='tel:3306015962' className='font-bold flex items-center justify-around md:hidden bg-blue-800 mx-3 py-2 px-2 rounded-lg text-white text-[0.7em] flex-wrap'>
+                <FaPhone className='mx-2'/>1-330-601-5962
             </a>
             
         </div>

@@ -85,7 +85,7 @@ export default function ScheduleService() {
                     Phone Scheduling
                 </h3>
                 <p>
-                    Prefer to speak with someone directly? Call our friendly customer service team at 1-216-553-2564, and we&apos;ll assist you in scheduling your service appointment. Our representatives are available 24/7 to take your call and answer any questions you may have.
+                    Prefer to speak with someone directly? Call our friendly customer service team at 1-330-601-5962, and we&apos;ll assist you in scheduling your service appointment. Our representatives are available 24/7 to take your call and answer any questions you may have.
                 </p>
             </div>
 
