@@ -1,5 +1,5 @@
 
-import pngimg from '../assets/arca_logo.png'
+import pngimg from '../assets/arca_logo_1.png'
 import webpimg from '../assets/arca_logo.webp'
 import { FaPhone } from 'react-icons/fa6'
 export default function Logo() {
