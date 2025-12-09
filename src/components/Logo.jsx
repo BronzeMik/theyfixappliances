@@ -1,6 +1,6 @@
 
-import pngimg from '../assets/tarc-logo.jpg'
-import webpimg from '../assets/tarc-logo.webp'
+import pngimg from '../assets/arca_logo.PNG'
+import webpimg from '../assets/arca_logo.webp'
 import { FaPhone } from 'react-icons/fa6'
 export default function Logo() {
     return(
