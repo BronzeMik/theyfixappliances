@@ -1,7 +1,7 @@
 import { MdEmail } from "react-icons/md";
 import { PiPhone } from "react-icons/pi";
-import pngimg from '../assets/tarc-logo.jpg'
-import webpimg from '../assets/tarc-logo.webp'
+import pngimg from '../assets/arca_logo_1.png'
+import webpimg from '../assets/arca_logo.webp'
 
 
 export default function Footer() {
