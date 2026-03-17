@@ -4,13 +4,14 @@ export default function CitiesWeServe() {
     const citiesWeServe = {
         "Ohio": ["Cleveland", "Toledo", "Columbus", "Cincinnati", "Dayton", "Youngstown", "Akron/Canton"],
         "Michigan": ["Detroit", "Grand Rapids", "Ann Arbor", "Sterling Heights", "Lansing", "Dearborn"],
-        "Pennsylvania": ["Philadelphia", "Pittsburg", "Allentown"],
+        "Pennsylvania": ["Philadelphia", "Pittsburgh", "Allentown"],
         "Florida": ["Jacksonville", "Miami", "Tampa", "Orlando", "St. Petersburg", "Port St. Lucie", "Cape Coral", "Fort Lauderdale", "Gainesville", "Palm Bay", "Coral Springs"],
         "North Carolina": ["Charlotte", "Raleigh", "Greensboro", "Durham", "Winston Salem", "Fayetteville"],
         "New York": ["New York City", "Hempstead Town", "Brookhaven", "Oyster Bay", "Buffalo", "Babylon Town", "Syracuse"],
         "New Jersey": ["Newark", "Jersey City", "Paterson", "Lakewood", "Elizabeth"],
         "Virginia": ["Virginia Beach", "Chesapeake", "Arlington", "Norfolk", "Richmond", "Newport News", "Alexandria", "Hampton"],
-        "Washington DC": ["Washington DC"]
+        "Washington DC": ["Washington DC"],
+        "Georgia": ["Atlanta", "Columbus", "Augusta", "Macon", "Savannah", "Athens", "South Fulton", "Sandy Springs"]
     };
 
     return (
